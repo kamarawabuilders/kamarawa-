@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamarawa Builders Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-text">
+                <span class="kama">KAMA</span><span class="rawa">RAWA</span>
+            </div>
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-list" id="navList">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="info">
+            <h1>KAMARAWA BUILDERS LTD</h1>
+            <p class="slogan slogan1">Dream-Create-Live</p>
+            <p class="slogan slogan2">Transform Your Space</p>
+            <br><br><br><br>
+            <button class="btn" id="visionButton">view vision</button>
+
+    </header>
+    <!-- Modal for Vision Content -->
+<div id="visionModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeVision">&times;</span>
+        <h2>Our Vision</h2>
+        <p>Our vision is to be a world-class Building Company recognized within the region and the world-over for our continuing commitment to customer service and client satisfaction in the Construction industry.</p>
+    </div>
+</div>
+
+    <section>
+        <h3>Mission</h3>
+        <p>To create value for our customers by providing exceptional service while using a professional approach in fulfilling our mandate.</p>
+        <h3>Core Values:</h3>
+        <ul>
+            <li><strong>Integrity:</strong> We employ the highest ethical standards and believe that our continued success is based upon sustaining the relationships that keep our business growing. </li>
+            <li><strong>Efficiency:</strong> We remain accountable to our clients for the efficient execution of any project.  We will work to identify and execute cost savings wherever we can. </li>
+            <li><strong>Teamwork:</strong>We believe that an open culture characterized by mutual respect, sharing of ideas and a commitment to common goals contributes to the overall productivity of our firm.</li>
+            <li><strong>Professionalism:</strong>  In providing professional service we are dedicated to competence, dependability and excellence.  We believe that our projects are a reflection of who we are as a company.
+            <li><strong>Customer Service:</strong> We are dedicated to not only achieving but exceeding client expectations.Through a strong commitment to the above values, Marcos Enterprises strives to set ourselves above the rest.</li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a mid-size building and construction firm aiming to scale higher heights in the field of building and construction works towards posterity.</p>
+        
+        <h3>Our Approach</h3>
+        <p>We value our customers and treat them equally while ensuring that any case or work presented to us is given the special and specified attention it deserves while working on the customers' most urgent needs and timelines.</p>
+        
+        <h3>Particulars of the Firm</h3>
+        <p>We are a mid-size building and construction firm with our head office located at 2nd Floor, Diani Complex, Diani Beach Road, Ukunda, Kwale County, Kenya.</p>
+    </section>
+
+    <section id="services">
+        <h2>Range of Services</h2>
+        
+        <h3>Civil Engineering Structures and Roads Construction</h3>
+        <p>Kamarawa Builders offer a wide range of civil and structural engineering construction, including steel structures erections, reinforced concrete structures, and road construction using gravel, paving blocks, concrete, bitumen roads, and associated drainage structures.</p>
+        
+        <h3>Building and Construction</h3>
+        <p>We boast vast experience in the building industry, having constructed both high-rise and low-rise residential buildings, commercial buildings, institutional buildings, and other constructable installations within the country.</p>
+        
+        <h3>Construction Project Management</h3>
+        <p>We provide a wide range of project management services, including construction project planning and management, contract management, construction project supervision, and site inspections.</p>
+    </section>
+    <section id="gallery">
+        <h2>Our Projects</h2>
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="openModal('images/building 1.jpg')">
+                <img src="images/building 1.jpg" alt="Building 1" />
+            </div>
+            <div class="gallery-item" onclick="openModal('images/building 5.jpg')">
+                <img src="images/building 5.jpg" alt="Building 5" />
+            </div>
+            <div class="gallery-item" onclick="openModal('images/simmingpool.jpg')">
+                <img src="images/simmingpool.jpg" alt="SimmingPool" />
+            </div>
+            <div class="gallery-item" onclick="openModal('images/building 4.jpg')">
+                <img src="images/building 4.jpg" alt="Building 4" />
+            </div>
+            <div class="gallery-item" onclick="openModal('images/building 3.jpg')">
+                <img src="images/building 3.jpg" alt="Building 3" />
+            </div>
+            <div class="gallery-item" onclick="openModal('images/building 2.jpg')">
+                <img src="images/building 2.jpg" alt="Building 2" />
+            </div>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    <section id="info-hover" class="hover-container">
+        <div id="capacity" class="hover-section">
+            <h2>Our Capacity</h2>
+            <p>Our Capacity consists of top-of-the-range equipment and machinery, including:</p>
+            <ul>
+                <li>Earth movers and Transport Equipment</li>
+                <li>Reinforced Concrete Equipment</li>
+                <li>Lightweight Machinery</li>
+            </ul>
+            <p>We also have a sizeable professional and non-professional workforce able to undertake any mandate when duty calls to meet clients’ expectations.</p>
+        </div>
+    
+        <div id="contact" class="hover-section">
+            <h2>For Enquiries</h2>
+            <p>Please get in touch with us...</p>
+            <div class="contact-info">
+                <p><strong>Physical Address:</strong><br>
+                2nd Floor, Diani Complex,<br>
+                Diani Beach Road,<br>
+                Ukunda</p>
+    
+                <p><strong>Postal Address:</strong><br>
+                P. O. Box 5012 (80400),<br>
+                Ukunda, Kenya</p>
+
+                    <p>
+                        <img src="images/images (4).jpeg"  class="contact-icon" />
+                        +254-721-808-157
+                    </p>
+                    <p>
+                        <img src="images/images (1).png"  class="contact-icon" />
+                        <a href="mailto:kamarawa21@gmail.com">kamarawa21@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Kamarawa Builders Ltd. All rights reserved.</p>
+            <p>Transforming spaces with integrity, efficiency, and professionalism.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/ZAnF6y6tRxWrikEs/?mibextid=LQQJ4d" target="_blank">
+                    <img src="images/download.png" alt="Facebook" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://x.com/kamarawa21?s=11" target="_blank">
+                    <img src="images/images (2).png" alt="Twitter" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://www.instagram.com/kamarawa254/" target="_blank">
+                    <img src="images/download (1).jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+        
+    
+    
+    <script src="myscript.js"></script>
+</body>
+</html>
